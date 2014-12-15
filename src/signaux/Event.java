@@ -11,8 +11,8 @@ public class Event {
     /**
      * Initialiser les attributs
      *
-     * @param valeur la valuer à mettre à jour pour le signal
-     * @param temps  le moment où le signal se mettre à jour
+     * @param valeur la valuer pour mettre à jour le signal
+     * @param temps  le moment où le signal est mis à jour
      */
     public Event(boolean valeur, int temps) {
         this.valeur = valeur;
