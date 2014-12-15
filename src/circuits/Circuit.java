@@ -16,7 +16,7 @@ public class Circuit {
     /**
      * Initialiser les attributs
      */
-    public Circuit(){
+    public Circuit() {
         signaux = new Signal[100];
         portes = new Porte[100];
         nbSignaux = 0;
@@ -25,24 +25,26 @@ public class Circuit {
 
     /**
      * Ajouter un signal au circuit
+     *
      * @param signal le signal à ajouter
      */
-    public void addSignal(Signal signal){
+    public void addSignal(Signal signal) {
         signaux[nbSignaux++] = signal;
     }
 
     /**
      * Ajouter une porte au circuit
+     *
      * @param porte la porte à ajouter
      */
-    public void addPortes(Porte porte){
+    public void addPortes(Porte porte) {
         portes[nbPortes++] = porte;
     }
 
     /**
      * Actualiser tout les signaux
      */
-    public void actualiseSignaux(){
+    public void actualiseSignaux() {
         for (int i = 0; i < nbSignaux; i++) {
             signaux[i].actualise();
         }
@@ -51,7 +53,7 @@ public class Circuit {
     /**
      * Activer tout les portes
      */
-    public void activation(){
+    public void activation() {
         for (int i = 0; i < nbPortes; i++) {
             portes[i].calculSortie();
         }
@@ -59,9 +61,10 @@ public class Circuit {
 
     /**
      * Simulation du circuit
+     *
      * @param tMax le maximum valeur du temps pur simulation
      */
-    public void simule(int tMax){
+    public void simule(int tMax) {
         Horloge.reset();
         for (int i = 0; i < tMax; i++) {
             actualiseSignaux();

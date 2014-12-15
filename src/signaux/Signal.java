@@ -10,15 +10,17 @@ public class Signal {
 
     /**
      * Initialiser les attributs
+     *
      * @param valeur la valeur defaut du signal
      */
-    public Signal(boolean valeur){
+    public Signal(boolean valeur) {
         this.valeur = valeur;
         driver = new Driver();
     }
 
     /**
      * Le getter de la valeur
+     *
      * @return la valeur
      */
     public boolean getValeur() {
@@ -27,16 +29,17 @@ public class Signal {
 
     /**
      * Ajouter un événement à le driver
+     *
      * @param event l'événement à ajouter
      */
-    public void addEvent(Event event){
+    public void addEvent(Event event) {
         driver.addEvent(event);
     }
 
     /**
      * Mettre à jour la valeur du signal quand un événement arrive
      */
-    public void actualise(){
+    public void actualise() {
         if (driver.consulteTemps() != -1 && driver.consulteTemps() == Horloge.top()) {
             valeur = driver.retraitEvenement().getValeur();
         }

@@ -1,13 +1,15 @@
 package simulateur;
 
-import signaux.*;
+import signaux.Event;
+import signaux.Horloge;
+import signaux.Signal;
 
 /**
  * Created by King on 2014-12-15.
  */
 public class TestSignal {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Signal s = new Signal(false);
         s.addEvent(new Event(true, 3));
         s.addEvent(new Event(false, 5));
@@ -19,7 +21,7 @@ public class TestSignal {
             s.actualise();
             System.out.println(
                     "au temps " + Horloge.top()
-                    + ", la valeur du signal est " + s.getValeur()
+                            + ", la valeur du signal est " + s.getValeur()
             );
             Horloge.increment();
         }

@@ -11,10 +11,11 @@ public class OU extends PorteAvecDeuxEntrees {
 
     /**
      * Initialiser les attributs
-     * @param entree1   la 1ère entrée
-     * @param entree2   la 2ème entrée
-     * @param sortie    la sortie
-     * @param retard    le retard
+     *
+     * @param entree1 la 1ère entrée
+     * @param entree2 la 2ème entrée
+     * @param sortie  la sortie
+     * @param retard  le retard
      */
     public OU(Signal entree1, Signal entree2, Signal sortie, int retard) {
         super(entree1, entree2, sortie, retard);

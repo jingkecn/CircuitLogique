@@ -11,10 +11,11 @@ public class ET extends PorteAvecDeuxEntrees {
 
     /**
      * Initialiser les attributs
-     * @param entree1   la 1ère entrée
-     * @param entree2   la 2ème entrée
-     * @param sortie    la sortie
-     * @param retard    le retard
+     *
+     * @param entree1 la 1ère entrée
+     * @param entree2 la 2ème entrée
+     * @param sortie  la sortie
+     * @param retard  le retard
      */
     public ET(Signal entree1, Signal entree2, Signal sortie, int retard) {
         super(entree1, entree2, sortie, retard);
@@ -25,7 +26,7 @@ public class ET extends PorteAvecDeuxEntrees {
      */
     @Override
     public void calculSortie() {
-        if (sortie.getValeur() != entree1.getValeur() && entree2.getValeur()){
+        if (sortie.getValeur() != entree1.getValeur() && entree2.getValeur()) {
             sortie.addEvent(
                     new Event(
                             entree1.getValeur() && entree2.getValeur(),

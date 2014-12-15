@@ -12,10 +12,11 @@ public abstract class Porte {
 
     /**
      * Initialiser les attributs
+     *
      * @param sortie la sortie de cette porte
      * @param retard le retard de cette porte
      */
-    public Porte(Signal sortie, int retard){
+    public Porte(Signal sortie, int retard) {
         this.sortie = sortie;
         this.retard = retard;
     }

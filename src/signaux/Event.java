@@ -10,16 +10,18 @@ public class Event {
 
     /**
      * Initialiser les attributs
+     *
      * @param valeur la valuer à mettre à jour pour le signal
-     * @param temps le moment où le signal se mettre à jour
+     * @param temps  le moment où le signal se mettre à jour
      */
-    public Event(boolean valeur, int temps){
+    public Event(boolean valeur, int temps) {
         this.valeur = valeur;
         this.temps = temps;
     }
 
     /**
      * Le getter de la valeur
+     *
      * @return la valeur
      */
     public boolean getValeur() {
@@ -28,6 +30,7 @@ public class Event {
 
     /**
      * Le getter du temps
+     *
      * @return le temps
      */
     public int getTemps() {
