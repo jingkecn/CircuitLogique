@@ -18,6 +18,7 @@ public class Driver {
 
     /**
      * Mettre les événements en ordre du temps pour éviter la déraison
+     * Bubble Sort
      */
     private void organise() {
         Event eventTemp;
