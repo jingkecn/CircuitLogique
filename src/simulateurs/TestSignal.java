@@ -10,9 +10,10 @@ import signaux.Signal;
 public class TestSignal {
 
     public static void main(String[] args) {
+
         Signal s = new Signal(false);
-        s.addEvent(new Event(true, 3));
         s.addEvent(new Event(false, 5));
+        s.addEvent(new Event(true, 3));
         s.addEvent(new Event(true, 9));
 
         Horloge.reset();

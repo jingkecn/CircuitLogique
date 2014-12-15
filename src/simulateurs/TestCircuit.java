@@ -14,7 +14,7 @@ public class TestCircuit {
 
     public static void main(String[] args) {
         Circuit c = new Circuit();
-        Signal s1 = new Signal(false),
+        Signal  s1 = new Signal(false),
                 s2 = new Signal(false),
                 s3 = new Signal(false),
                 s4 = new Signal(false),
