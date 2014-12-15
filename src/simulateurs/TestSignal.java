@@ -1,4 +1,4 @@
-package simulateur;
+package simulateurs;
 
 import signaux.Event;
 import signaux.Horloge;

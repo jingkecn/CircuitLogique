@@ -1,4 +1,4 @@
-package simulateur;
+package simulateurs;
 
 import circuits.Circuit;
 import circuits.ET;
